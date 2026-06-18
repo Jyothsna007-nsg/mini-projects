@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+      }
+
+      /* focus pseudo-class */
+      input:focus,
+      textarea:focus {
+        border-color: #0077ff;
+        outline: none;
+      }
+
+      /* invalid pseudo-class */
+      input:invalid,
+      select:invalid,
+      textarea:invalid {
+        border-color: red;
+      }
+
+      /* valid pseudo-class */
+      input:valid,
+      select:valid,
+      textarea:valid {
+        border-color: green;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 20px;
+        border: none;
+        background: #0077ff;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      /* hover pseudo-class */
+      button:hover {
+        background: #005fcc;
+      }
+
+      .radio-group {
+        margin-top: 20px;
+        border: 2px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      .radio-group input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      /* checked pseudo-class */
+      .radio-group input[type="radio"]:checked {
+        border-color: blue;
+        background-color: lightblue;
+        box-shadow: 0 0 5px blue;
+      }
+
+      /* checked label color */
+      .radio-group input[type="radio"]:checked + label {
+        color: blue;
+        font-weight: bold;
+      }
+
+      /* first-of-type pseudo-class */
+      input:first-of-type {
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>Job Application Form</h1>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" required />
+
+        <label for="position">Select Position</label>
+        <select id="position" required>
+          <option value="">Choose a position</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="backend">Backend Developer</option>
+          <option value="designer">UI/UX Designer</option>
+        </select>
+
+        <fieldset class="radio-group">
+          <legend>Availability</legend>
+
+          <input type="radio" id="fulltime" name="availability" />
+          <label for="fulltime">Full-Time</label>
+
+          <input type="radio" id="parttime" name="availability" />
+          <label for="parttime">Part-Time</label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>

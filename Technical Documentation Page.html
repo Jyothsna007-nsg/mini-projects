@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+      }
+
+      /* NAVBAR */
+      #navbar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 220px;
+        height: 100vh;
+        border-right: 2px solid #ccc;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      #navbar header {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .nav-link {
+        display: block;
+        margin: 10px 0;
+        color: black;
+        text-decoration: none;
+      }
+
+      /* MAIN CONTENT */
+      #main-doc {
+        margin-left: 240px;
+        padding: 20px;
+      }
+
+      .main-section {
+        margin-bottom: 40px;
+      }
+
+      .main-section header {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      code {
+        display: block;
+        background: #eee;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      /* MEDIA QUERY */
+      @media (max-width: 768px) {
+        #navbar {
+          position: relative;
+          width: 100%;
+          height: auto;
+        }
+
+        #main-doc {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Web Development Docs</header>
+
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+      <a class="nav-link" href="#CSS_Fundamentals">CSS Fundamentals</a>
+      <a class="nav-link" href="#JavaScript_Overview">JavaScript Overview</a>
+      <a class="nav-link" href="#Best_Practices">Best Practices</a>
+    </nav>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>
+          Web development is the process of building websites and applications.
+        </p>
+        <p>It involves HTML, CSS, and JavaScript.</p>
+        <code>console.log("Hello World");</code>
+        <ul>
+          <li>Frontend</li>
+          <li>Backend</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="HTML_Basics">
+        <header>HTML Basics</header>
+        <p>HTML structures web content.</p>
+        <p>It uses elements like headings and paragraphs.</p>
+        <code>&lt;h1&gt;Title&lt;/h1&gt;</code>
+        <ul>
+          <li>Tags</li>
+          <li>Attributes</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="CSS_Fundamentals">
+        <header>CSS Fundamentals</header>
+        <p>CSS styles the web page.</p>
+        <p>It controls layout and design.</p>
+        <code>body { color: black; }</code>
+        <ul>
+          <li>Selectors</li>
+          <li>Properties</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="JavaScript_Overview">
+        <header>JavaScript Overview</header>
+        <p>JavaScript adds interactivity.</p>
+        <p>It runs in the browser.</p>
+        <code>let x = 5;</code>
+        <ul>
+          <li>Variables</li>
+          <li>Functions</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="Best_Practices">
+        <header>Best Practices</header>
+        <p>Write clean and readable code.</p>
+        <p>Use proper structure and naming.</p>
+        <code>const userName = "John";</code>
+        <ul>
+          <li>Clean Code</li>
+          <li>Consistency</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
